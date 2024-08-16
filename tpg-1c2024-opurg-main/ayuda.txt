@@ -1,0 +1,35 @@
+		Minijuego Secundario
+
+	MST: Algoritmo de Prim 
+	Referencia: https://www.youtube.com/watch?v=cplfcGZmX7I&ab_channel=MichaelSambol
+		Complejidad de tiempo:
+			 		O(E Log V)
+			 		V: n° de vértices total
+					E: n° de aristas total ->	((V - 1) * V) / 2
+
+			1) Adjacency Matrix Searching: O(V**2)
+
+			2) (Aún no vemos) Binary Heap and Adjacency List: O(VLog V + ELog V)
+
+	Opinion: Para mí, me resulta más fácil de ver y encontrar Prim que el de K...  
+
+	Classes:
+	Referencia: https://www.youtube.com/watch?v=phgMLSu9Jyw&ab_channel=EmmanuelLG
+
+			1) Vertice (Locales)
+				Nodo nos sirve, debido a que esta pensada para ABB
+				Atributos:	 - char/int Nombre
+							 - *Siguiente_vertice
+							 - *Arista (La primera/unica arista)  
+				
+			2) Arista (Cantidad de Pedidos)
+			 	Costo de ir un nodo a otro nodo
+				Atributos:	 - int Costo
+							 - *Destino 
+							 - *Siguiente_arista (En caso de tener 2o mas)
+
+			3) Grafo ("Mapa")
+				Donde se almacena todo
+				Atributos: 	- size_t Tamanio	
+							- *Primer_vertice
+			 
